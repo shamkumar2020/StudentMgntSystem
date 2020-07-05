@@ -108,7 +108,7 @@ class CourseReg extends JPanel implements ActionListener
     cors.setFont(new Font("Copperplate Gothic",Font.BOLD,40));
     cors.setBounds(400,600,250,40);
     mid.add(cors);
-    String s1[]={"","C","Cpp","Java","Python"};
+    String s1[]={"","C",".net","Java","Python"};
     cor=new JComboBox(s1);
     cor.setFont(new Font("Copperplate Gothic",Font.BOLD,40));
     cor.setBounds(700,600,250,40);
