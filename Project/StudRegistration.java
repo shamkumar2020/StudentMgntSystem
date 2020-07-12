@@ -25,7 +25,7 @@ class StudRegistration extends JPanel implements ActionListener
 	 //setTitle("My Frame");
 
 	 top=new JPanel();
-	 top.setBackground(Color.yellow);
+	 top.setBackground(new Color(184,117,204));
 	 tit=new JLabel("Student Information");
 	 tit.setFont(new Font("Britannic",Font.BOLD,50));
 	 top.add(tit);

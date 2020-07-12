@@ -15,6 +15,7 @@ class LoginDemo extends JFrame implements ActionListener
 	setVisible(true);
 	setSize(550,400);
 	setTitle("My Frame");
+	setLocation(450,250);
 	mid=new JPanel();
 	mid.setBackground(Color.pink);
 	mid.setLayout(null);

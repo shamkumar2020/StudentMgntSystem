@@ -108,7 +108,7 @@ class CourseReg extends JPanel implements ActionListener
     cors.setFont(new Font("Copperplate Gothic",Font.BOLD,40));
     cors.setBounds(400,600,250,40);
     mid.add(cors);
-    String s1[]={"","C",".net","Java","Python"};
+    String s1[]={"","C","Cpp","Java","Python"};
     cor=new JComboBox(s1);
     cor.setFont(new Font("Copperplate Gothic",Font.BOLD,40));
     cor.setBounds(700,600,250,40);
@@ -348,7 +348,7 @@ class CourseReg extends JPanel implements ActionListener
 	  Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	  Connection con=DriverManager.getConnection("Jdbc:Odbc:sham");
 	  Statement st=con.createStatement();
-	  ResultSet rs=st.executeQuery("select * from Stud where std="+txtr.getSelectedItem());
+	  ResultSet rs=st.executeQuery("select * from Stud where std="+txtr.getSelectedIndex());
 	  if(rs.next())
 	  {
 		//txtr.setText(rs.getString(1));
@@ -381,7 +381,7 @@ class CourseReg extends JPanel implements ActionListener
   	  ResultSet rs=st.executeQuery("select * from cource where regno="+txtr.getSelectedItem());
   	  if(rs.next())
   	  {
-  		//txtr.setText(rs.getString(1));
+  		txtr.setSelectedItem(rs.getString(1));
   		txtd.setText(rs.getString(2));
   		txts.setText(rs.getString(3));
   		jta.setText(rs.getString(4));

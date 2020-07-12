@@ -3,7 +3,7 @@ import javax.swing.*;
 
 class TabbedPaneDemo extends JFrame
 {
-	JPanel stud,c,t,m,n;
+	JPanel stud,c,t,m,n,mres,res,rep;
 	JTabbedPane tab;
 	TabbedPaneDemo()
 	{
@@ -33,6 +33,13 @@ class TabbedPaneDemo extends JFrame
 		tab.addTab("Cource Res",new ImageIcon("img\\box.png"),new CourseReg());
 		tab.addTab("Complaint Res",new ImageIcon("img\\Brach.png"),new Complaint());
 		tab.addTab("Notice Res",new ImageIcon("img\\Business.png"),new NoticeR());
+		tab.addTab("Marks res",new ImageIcon("img\\Business.png"),new MarksRegi());
+		tab.addTab("Stud Report",new ImageIcon("img\\Business.png"),new StudReport());
+		tab.addTab("Teacher Report",new ImageIcon("img\\Business.png"),new TeacherReport());
+		tab.addTab("Course Report",new ImageIcon("img\\Business.png"),new CourceReport());
+		tab.addTab("Notice Report",new ImageIcon("img\\Business.png"),new NoticeReport());
+		tab.addTab("Complaint Report",new ImageIcon("img\\Business.png"),new ComplaintReport());
+		tab.addTab("Marks Report",new ImageIcon("img\\Business.png"),new MarksReport());
 
 		add(tab);
 	}
